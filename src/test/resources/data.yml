@@ -1,0 +1,18 @@
+categories:
+  - name: Пицца
+    subcategories:
+      - name: Классические
+        products:
+          - name: Маргарита
+            description: Классическая пицца с сыром
+            price: 450.0
+          - name: Пепперони
+            description: Острая пицца с колбасой
+            price: 500.0
+  - name: Роллы
+    subcategories:
+      - name: Классические роллы
+        products:
+          - name: Филадельфия
+            description: Ролл с лососем и сыром
+            price: 300.0
