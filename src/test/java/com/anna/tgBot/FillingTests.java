@@ -53,10 +53,11 @@ public class FillingTests {
             clientRepository.save(
                     new Client(
                             clientData.getExternalId(),
-                            clientData.getAddress(),
                             clientData.getFullName(),
-                            clientData.getPhoneNumber()
+                            clientData.getPhoneNumber(),
+                            clientData.getAddress()
                     )
+
             );
         }
 
