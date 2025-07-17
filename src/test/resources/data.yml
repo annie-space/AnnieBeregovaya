@@ -16,3 +16,13 @@ categories:
           - name: Филадельфия
             description: Ролл с лососем и сыром
             price: 300.0
+
+clients:
+  - fullName: Анна Береговая
+    address: г. Севастополь, ул. Весенняя, 12
+    externalId: 1001
+    phoneNumber: +79781234567
+  - fullName: Илья Демидов
+    address: г. Ялта, ул. Гагарина, 3
+    externalId: 1002
+    phoneNumber: +79783334455
