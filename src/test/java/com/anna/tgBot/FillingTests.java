@@ -34,14 +34,14 @@ public class FillingTests {
     private ClientRepository clientRepository;
     
 
-   /* @BeforeEach
+   @BeforeEach
     void cleanDatabase() {
         orderProductRepository.deleteAll();
         clientOrderRepository.deleteAll();
         productRepository.deleteAll();
         clientRepository.deleteAll();
         categoryRepository.deleteAll();
-    }*/
+    }
 
     @Test
     void fillFromYaml() throws Exception {
