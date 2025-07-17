@@ -23,5 +23,5 @@ public class CategoryData {
 
     private List<SubcategoryData> subcategories;
 
-    // геттеры и сеттеры
+
 }

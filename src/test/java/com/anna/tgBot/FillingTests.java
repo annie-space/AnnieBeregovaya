@@ -2,14 +2,14 @@ package com.anna.tgBot;
 
 import com.anna.tgBot.model.Category;
 import com.anna.tgBot.model.Product;
-import com.anna.tgBot.repository.CategoryRepository;
-import com.anna.tgBot.repository.ProductRepository;
+import com.anna.tgBot.repository.*;
 import com.anna.tgBot.yaml.CategoryData;
 import com.anna.tgBot.yaml.DataWrapper;
 import com.anna.tgBot.yaml.ProductData;
 import com.anna.tgBot.yaml.SubcategoryData;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import org.junit.jupiter.api.BeforeEach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.junit.jupiter.api.Test;
@@ -25,6 +25,25 @@ public class FillingTests {
 
     @Autowired
     private ProductRepository productRepository;
+
+    @Autowired
+    private OrderProductRepository orderProductRepository;
+
+    @Autowired
+    private ClientOrderRepository clientOrderRepository;
+
+    @Autowired
+    private ClientRepository clientRepository;
+    
+
+   /* @BeforeEach
+    void cleanDatabase() {
+        orderProductRepository.deleteAll();
+        clientOrderRepository.deleteAll();
+        productRepository.deleteAll();
+        clientRepository.deleteAll();
+        categoryRepository.deleteAll();
+    }*/
 
     @Test
     void fillFromYaml() throws Exception {
