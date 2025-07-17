@@ -19,6 +19,9 @@ public class Client {
 
     @Column(nullable = false, length = 400)
     private String address;
+    public Client() {
+    }
+
 
     public Client(Long id, Long externalId, String fullName, String phoneNumber, String address) {
         this.id = id;
